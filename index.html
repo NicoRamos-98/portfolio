@@ -1,11 +1,155 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nico's Mini project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css"> <!--To show the hamburger menu-->
+
 </head>
 <body>
-    hi
+      <!--Actual navigation bar-->
+        <nav id="desktop-nav">
+         <div class="logo">NR</div>  
+         <div>
+            <ul class="navbar-links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skill">Skill</a></li>
+            <li><a href="#Interest">Interest</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            </ul>
+         </div>
+        </nav>
+
+        <!--Hamburger menu-->
+        <nav id="hamburger-nav" >
+            <div class="logo">NR</div>
+            <div class="hamburger-menu">
+               <div class="hamburger-icon" onclick="showHideMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+               <div>
+               <ul class="menu-links">
+                  <li><a href="#Home" onclick="showHideMenu()">Home</a></li>
+                  <li><a href="#About" onclick="showHideMenu()">About</a></li>
+                  <li><a href="#Skill" onclick="showHideMenu()">Skill</a></li>
+                  <li><a href="#Interest" onclick="showHideMenu()">Interest</a></li>
+                  <li><a href="#Contact" onclick="showHideMenu()">Contact</a></li>
+               </ul>
+               </div>
+            </div>
+        </nav>
+     
+
+     <section  class="profile" id="Home">
+      <div class="section_profile-picture">
+         <img src="./img/nico.jpeg" alt="my profile picture" class="circle-img">
+      </div>
+      <div class="section_text">
+         <p class="section_paragraph1">Hello, I am </p>
+         <h1>Nico Ramos</h1>
+         <p class="section_paragraph2">A Computer Science Student at VIU</p>
+      </div>
+
+     </section>
+
+     <section id="About" class="section_about">
+      <h2>About Me</h2>
+      <div class="about-wrapper">
+        <div class="about-text">
+          <p>
+            Hey! I'm <strong>Nico</strong>, a Computer Science student at Vancouver Island University, with a growing passion for cybersecurity. 
+            I'm still exploring different areas of tech, but ethical hacking and digital security in which that the main goal.
+          </p>
+          <p>
+            This portfolio is the last assignment for the class, but I treated it like the real deal — a way to show off what I’ve learned so far and start building this mini project.
+          </p>
+        </div>
+    
+        <div class="about-list">
+          <ul>
+            <li>Currently studying at VIU</li>
+            <li>Learning ethical hacking and exploring digital security</li>
+            <li>I like to build cool, meaningful projects</li>
+            <li>Travelling and exploring the world</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="Skill" class="section_skills">
+      <h2>Skills</h2>
+    
+      <p class="skills-intro">
+         Here are some of the tools and languages I’ve worked with so far. 
+         I learned <strong>C++</strong> and <strong>Linux</strong> 
+         I learned it  during  csci159 class  course at university, which gave me a strong technical foundation early on. 
+         I also taught myself <strong>HTML</strong> and <strong>CSS</strong> before enrolling csci115  
+         class — and that made everything click much faster and easier.
+       </p>
+    
+      <div class="skills-flex">
+        <ul class="skills-list">
+          <li>HTML <span class="level">Basic–Intermediate</span></li>
+          <li>CSS <span class="level">Basic–Intermediate</span></li>
+          <li>JavaScript <span class="level">Basic</span></li>
+          <li>Linux <span class="level">Basic</span></li>
+          <li>Git & GitHub <span class="level">Basic</span></li>
+          <li>C++ <span class="level">Basic</span></li>
+        </ul>
+      </div>
+    
+      <p class="currently-learning">
+        📚 Currently learning: Ethical hacking by my own 
+      </p>
+    </section>
+
+    <section id="Interest" class="section_interest">
+      <h2>Interests</h2>
+      <p class="interest-intro">
+        Outside of my studies, I’m always exploring things that expand my creativity and curiosity. These interests keep me sharp, inspired, and balanced.
+      </p>
+    
+      <ul class="interest-list">
+        <li>🎮 Gaming — especially strategy and story-based games</li>
+        <li>🌍 Traveling and discovering new places</li>
+        <li>🕵️ Ethical hacking and cybersecurity content</li>
+        <li>🎧 Music helps me focus and recharge</li>
+        <li>📺 Following hacking documentaries, YouTube creators and watching movie like Mr Robot </li>
+      </ul>
+    </section>
+     
+    <section id="Contact" class="section_contact">
+      <h2>Contact Me</h2>
+    
+      <p class="contact-intro">
+        Let’s connect! Whether you want to talk about tech, collaborate on a project, or just say hi — I’m always open to new opportunities and conversations.
+      </p>
+
+      <form class="contact-form" action="#" method="POST">
+         <input type="text" placeholder="Your Name" required />
+         <input type="email" placeholder="Your Email" required />
+         <textarea placeholder="Your Message" rows="5" required></textarea>
+         <button type="submit">Send Message</button>
+       </form>
+   
+      <div class="contact-socials">
+        <img src="./img/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://linkedin.com/in/nico-ramos-b21a212a3'" />
+        <img src="./img/instagram.png" alt="Instagram" class="icon" onclick="location.href='https://www.instagram.com/cs_nico3000'" />
+        <img src="./img/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/nicoramos-98'" />
+      </div>
+    
+    </section>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span>Nico Ramos — 💻</p>
+    </footer>
+
+     <script src="script.js"></script>
 </body>
 </html>

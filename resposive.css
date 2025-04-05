@@ -1,0 +1,30 @@
+/* =============================
+   Resposinve part of the web
+   ============================= */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .section_profile-picture {
+      height: 150px;
+      width: 150px;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  }
